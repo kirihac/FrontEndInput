@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>JS Challenge: DOM, CONDITIONALS, LOGIC</title>
+	</head>
+	<body>
+	<input type="text" id="inputText">
+	<button onclick="checkText()">Check Text</button>
+	<script>
+        function checkText() {
+            var inputText = document.getElementById("inputText").value;
+            if (inputText === "") {
+                alert("Input is empty");
+            } else if (inputText.toLowerCase().includes("hello")) {
+                document.body.style.backgroundColor = "#7AA874";
+            } else if (inputText.toLowerCase().includes("world")) {
+                document.body.style.backgroundColor = "#B9EDDD";
+            } else {
+                document.body.style.backgroundColor = "#FA9884";
+            }
+        }
+    </script>
+	</body>
+</html>
